@@ -4,32 +4,38 @@ function App() {
 
   return (
     <>
-      <nav class="navbar">
-        <div class="navbar-logo">
-          <img src="." alt="Don Apple"></img>
+
+    <header>
+      <nav className="navbar container">
+        <div>
+          <h1>Don Apple</h1>
         </div>
-        <div class="navbar-menu">
-          <a href="#" class="active">INICIO</a>
+        <div className="navbar-menu">
+          <a href="#">INICIO</a>
           <a href="#">PRODUCTOS</a>
           <a href="#">NOSOTROS</a>
           <a href="#">PREGUNTAS</a>
         </div>
       </nav>
 
-
-      <section class="hero">
-        <div class="hero-image">
-            <img src="img/products/iphonegrande.png" alt="iPhone"></img>
+      <section className="hero">
+        <div className="hero-content container">
+          <div>
+            <img className="hero-img" src="img/products/iphonegrande.png" alt="iPhone"></img>
           </div>
-        <div class="hero-text">
-          <h1>Lorem ipsum</h1>
-          <p>Consectetur adielit</p>
-          <button>Ver más</button>
-        </div>
+          <div className="hero-text">
+            <h2>Lo que estabas buscando</h2>
+            <h3>IPHONE 16</h3>
+            <p>¡Ya esta aquí!</p>
+            <button>Ver más</button>
+          </div>
+        </div> 
       </section>
+    </header>
+      
 
 
-      <section class="features">
+      <section className="features">
         <div>
           <img src="img/products/envios.png" alt="Envíos"></img>
           <h3>ENVIOS</h3>
@@ -48,28 +54,28 @@ function App() {
       </section>
 
 
-      <section class="products">
-        <div class="product-card">
+      <section className="products">
+        <div className="product-card">
           <img src="img/products/iphonegrande.png" alt="iPhone"></img>
           <h4>Lorem ipsum</h4>
           <button>Ver más</button>
         </div>
-        <div class="product-card">
+        <div className="product-card">
           <img src="img/products/macbook.png" alt="MacBook"></img>
           <h4>Lorem ipsum</h4>
           <button>Ver más</button>
         </div>
-        <div class="product-card">
+        <div className="product-card">
           <img src="img/products/applewatch.png" alt="Apple Watch"></img>
           <h4>Lorem ipsum</h4>
           <button>Ver más</button>
         </div>
-        <div class="product-card">
+        <div className="product-card">
           <img src="img/products/idrone.png" alt="Dron"></img>
           <h4>Lorem ipsum</h4>
           <button>Ver más</button>
         </div>
-        <div class="product-card">
+        <div className="product-card">
             <img src="img/products/airpods.png" alt="Dron"></img>
             <h4>Lorem ipsum</h4>
             <button>Ver más</button>

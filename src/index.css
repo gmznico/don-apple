@@ -1,68 +1,109 @@
-/* GLOBAL */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* VARIABLES */
+:root{
+  --color-primary: #484848;
+  --color-secundary: #ffffff;
+  
+  --title-size: 4rem;
+  --text-size: 1rem;
 }
+
+/* GLOBALS */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+  width: 75vw;
+  max-width: 900px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+
 
 /* NAVBAR */
 .navbar {
-  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
+  padding: 1rem;
 }
 
-.navbar-logo img {
-  height: 4rem;
-}
 
 .navbar-menu {
   display: flex;
-  gap: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .navbar-menu a {
   text-decoration: none;
-  color: black;
+  color: var(--color-primary);
   font-weight: bold;
-  font-size: 18px;
+  font-size: var(--text-size);
 }
 
-.navbar-menu a.active {
-  border-bottom: 2px solid black;
+.navbar-menu a:hover{
+  color: #1c1c1c;
 }
 
 /* HERO */
 .hero {
-  background-color: #4d4d4d;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-secundary);
+}
+
+.hero-content{
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 40px;
 }
 
-.hero-text {
-  max-width: 50%;
+.hero-img{
+  min-width: 25vw;
+  min-height: 35vw;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin: 0;
+.hero-text h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
 }
 
-.hero p {
-  font-size: 20px;
-  margin-top: 10px;
+.hero-text h3 {
+  font-size: 5rem;
+  margin: 0 0 .7rem 0;
 }
 
-.hero button {
-  margin-top: 20px;
+.hero-text p {
+ font-size: var(--text-size);
+ font-weight: 400;
+ margin: .7rem 0;
+}
+
+.hero-text button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: white;
