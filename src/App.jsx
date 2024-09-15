@@ -1,4 +1,8 @@
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTruck } from '@fortawesome/free-solid-svg-icons'
+import { faPercent } from '@fortawesome/free-solid-svg-icons'
+import { faHeadphones } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
 
@@ -8,13 +12,14 @@ function App() {
     <header>
       <nav className="navbar container">
         <div>
-          <h1>Don Apple</h1>
+        <img className="logo" src="img/logos/logo-black.png" alt="Don Apple"></img>
         </div>
         <div className="navbar-menu">
           <a href="#">INICIO</a>
           <a href="#">PRODUCTOS</a>
           <a href="#">NOSOTROS</a>
           <a href="#">PREGUNTAS</a>
+          
         </div>
       </nav>
 
@@ -24,63 +29,53 @@ function App() {
             <img className="hero-img" src="img/products/iphonegrande.png" alt="iPhone"></img>
           </div>
           <div className="hero-text">
-            <h2>Lo que estabas buscando</h2>
-            <h3>IPHONE 16</h3>
-            <p>¡Ya esta aquí!</p>
-            <button>Ver más</button>
+            <h2>¡Todo lo que buscas!</h2>
+            <h3>Venta por mayor y menor</h3>
+            <div className="hero-p">
+              <p>Equipos Apple | Nuevos y Usados</p>
+              <button className="hero-button button">
+                <span>Ver más</span>
+              </button>
+            </div>
           </div>
         </div> 
       </section>
     </header>
       
-
-
-      <section className="features">
-        <div>
-          <img src="img/products/envios.png" alt="Envíos"></img>
-          <h3>ENVIOS</h3>
-          <p>Lorem ipsum dolor sit amet</p>
-        </div>
-        <div>
-          <img src="img/products/atencion.png" alt="Atención"></img>
-          <h3>ATENCIÓN</h3>
-          <p>Lorem ipsum dolor sit amet</p>
-        </div>
-        <div>
-          <img src="img/products/garantia.png" alt="Garantía"></img>
-          <h3>GARANTÍA</h3>
-          <p>Lorem ipsum dolor sit amet</p>
-        </div>
-      </section>
-
-
-      <section className="products">
-        <div className="product-card">
-          <img src="img/products/iphonegrande.png" alt="iPhone"></img>
-          <h4>Lorem ipsum</h4>
-          <button>Ver más</button>
-        </div>
-        <div className="product-card">
-          <img src="img/products/macbook.png" alt="MacBook"></img>
-          <h4>Lorem ipsum</h4>
-          <button>Ver más</button>
-        </div>
-        <div className="product-card">
-          <img src="img/products/applewatch.png" alt="Apple Watch"></img>
-          <h4>Lorem ipsum</h4>
-          <button>Ver más</button>
-        </div>
-        <div className="product-card">
-          <img src="img/products/idrone.png" alt="Dron"></img>
-          <h4>Lorem ipsum</h4>
-          <button>Ver más</button>
-        </div>
-        <div className="product-card">
-            <img src="img/products/airpods.png" alt="Dron"></img>
-            <h4>Lorem ipsum</h4>
-            <button>Ver más</button>
+    <main className="container">
+      <section className="cards">
+        <div className="envio">
+          <div className="envio-icon card-flex">
+            <FontAwesomeIcon icon={faTruck} size='2xl' style={{color: "#333333"}}/>
+            <h3 className='card-h3'>ENVIOS</h3>
           </div>
+          <p className='card-p'>Envios a todo el pais.</p>
+        </div>
+        <div className="atencion">
+          <div className="atencion-icon card-flex">
+            <FontAwesomeIcon icon={faHeadphones} size='2xl' style={{color: "#333333"}}  />
+            <h3 className='card-h3'>ATENCIÓN</h3>
+          </div>
+          <p className='card-p'>Atención las 24h.</p>
+        </div>
+        <div className="garantia">
+          <div className="garantia-icon card-flex">
+            <FontAwesomeIcon icon={faPercent} size='2xl' style={{color: "#333333"}} />
+            <h3 className='card-h3'>GARANTÍA</h3>
+          </div>
+          <p className='card-p'>Contamos con garantía.</p>
+        </div>
       </section>
+
+      <section>
+
+      </section>
+
+
+
+    </main>
+      
+      
 
     </>
   )
