@@ -24,9 +24,9 @@ const App = () => {
 
           <section className="hero">
             <div className="hero-content container">
-              <div>
+              
                 <img className="hero-img" src="img/products/iphonegrande.png" alt="iPhone" />
-              </div>
+              
               <div className="hero-text">
                 <h2>¡Todo lo que buscas!</h2>
                 <h3>Venta por mayor y menor</h3>
@@ -48,7 +48,7 @@ const App = () => {
                 <FontAwesomeIcon icon={faTruck} size='2xl' style={{color: "#333333"}} />
                 <h3 className='card-h3'>ENVIOS</h3>
               </div>
-              <p className='card-p'>Envios a todo el pais.</p>
+              <p className='card-p'>Envio a todo el pais.</p>
             </div>
             <div className="atencion">
               <div className="atencion-icon card-flex">
@@ -72,7 +72,11 @@ const App = () => {
             <RedirectBox label="LAPTOPS" link="/laptops" backgroundImage="img/products/laptops.jpg" />
           </section>
         </main>
+        <footer className='footer'>
+          <p>footer @reserverd</p>
+        </footer>
       </div>
+      
     </Router>
   );
 };
