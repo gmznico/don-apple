@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruck, faPercent, faHeadphones } from '@fortawesome/free-solid-svg-icons';
-import RedirectBox from './RedirectBox'; 
-import './index.css'; 
+import RedirectBox from './RedirectBox';
+import ProductSection from './ProductSection';
+import './index.css';
 
 const App = () => {
   return (
@@ -24,9 +25,7 @@ const App = () => {
 
           <section className="hero">
             <div className="hero-content container">
-              
-                <img className="hero-img" src="img/products/iphonegrande.png" alt="iPhone" />
-              
+              <img className="hero-img" src="img/products/iphonegrande.png" alt="iPhone" />
               <div className="hero-text">
                 <h2>¡Todo lo que buscas!</h2>
                 <h3>Venta por mayor y menor</h3>
@@ -71,12 +70,14 @@ const App = () => {
             <RedirectBox label="RELOJES" link="/relojes" backgroundImage="img/products/applewatch.jpg" />
             <RedirectBox label="LAPTOPS" link="/laptops" backgroundImage="img/products/laptops.jpg" />
           </section>
+
+          <ProductSection /> {}
         </main>
+
         <footer className='footer'>
           <p>footer @reserverd</p>
         </footer>
       </div>
-      
     </Router>
   );
 };
