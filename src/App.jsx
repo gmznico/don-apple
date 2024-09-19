@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruck, faPercent, faHeadphones } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import RedirectBox from './RedirectBox';
 import ProductSection from './ProductSection';
 import './index.css';
@@ -10,16 +12,16 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <header>
+        <header id='inicio'>
           <nav className="navbar container">
             <div>
               <img className="logo" src="img/logos/logo-black.png" alt="Don Apple" />
             </div>
             <div className="navbar-menu">
-              <a href="#">INICIO</a>
-              <a href="#">PRODUCTOS</a>
-              <a href="#">NOSOTROS</a>
-              <a href="#">PREGUNTAS</a>
+              <a href="#inicio">INICIO</a>
+              <a href="#products">PRODUCTOS</a>
+              <a href="#about">NOSOTROS</a>
+              <a href="#cuestions">PREGUNTAS</a>
             </div>
           </nav>
 
@@ -75,7 +77,15 @@ const App = () => {
         </main>
 
         <footer className='footer'>
-          <p>footer @reserverd</p>
+          <section className='redes'>
+             <a href=""><FontAwesomeIcon icon={faFacebookF} size='2xl'/></a>
+             <a href=""><FontAwesomeIcon icon={faInstagram} size='2xl'/></a>
+             <a href=""><FontAwesomeIcon icon={faEnvelope} size='2xl'/></a>
+          </section>
+          <hr className='container'/>
+          <section className='footer-text'>
+            <p className='footer-text-p'>All right reserverd.</p>
+          </section>
         </footer>
       </div>
     </Router>
