@@ -77,14 +77,22 @@ const App = () => {
         </main>
 
         <footer className='footer'>
-          <section className='redes'>
-             <a href=""><FontAwesomeIcon icon={faFacebookF} size='2xl'/></a>
-             <a href=""><FontAwesomeIcon icon={faInstagram} size='2xl'/></a>
-             <a href=""><FontAwesomeIcon icon={faEnvelope} size='2xl'/></a>
+          <section className='footer-primary'>
+              <div>
+                <a href="#inicio"><img className="footer-logo" src="img/logos/logo-white.png" alt="Don Apple" /></a>
+              </div>
+              <div className='footer-redes'>
+                <p className='redes-p'>Siguenos</p>
+                <div className='footer-redes-icon'>
+                <a href=""><FontAwesomeIcon icon={faFacebookF} size='2xl'/></a>
+                <a href=""><FontAwesomeIcon icon={faInstagram} size='2xl'/></a>
+                <a href=""><FontAwesomeIcon icon={faEnvelope} size='2xl'/></a>
+                </div>
+                
+              </div>
           </section>
-          <hr className='container'/>
           <section className='footer-text'>
-            <p className='footer-text-p'>All right reserverd.</p>
+            <p className='footer-text-p'>&copy; 2024 - All rights reserverd.</p>
           </section>
         </footer>
       </div>
