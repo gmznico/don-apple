@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruck, faPercent, faHeadphones } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import RedirectBox from './RedirectBox';
-import ProductSection from './ProductSection';
-import './index.css';
+import ImageHover from './ImageHover';
+import './index.css'; 
 
 const App = () => {
   return (
@@ -49,7 +49,7 @@ const App = () => {
                 <FontAwesomeIcon icon={faTruck} size='2xl' style={{color: "#333333"}} />
                 <h3 className='card-h3'>ENVIOS</h3>
               </div>
-              <p className='card-p'>Envio a todo el pais.</p>
+              <p className='card-p'>Envio a todo el país.</p>
             </div>
             <div className="atencion">
               <div className="atencion-icon card-flex">
@@ -66,33 +66,30 @@ const App = () => {
               <p className='card-p'>Contamos con garantía.</p>
             </div>
           </section>
-
+          <ImageHover />
           <section className="redirect-container">
             <RedirectBox label="APPLE" link="/apple" backgroundImage="img/products/apple.jpg" />
             <RedirectBox label="RELOJES" link="/relojes" backgroundImage="img/products/applewatch.jpg" />
             <RedirectBox label="LAPTOPS" link="/laptops" backgroundImage="img/products/laptops.jpg" />
           </section>
-
-          <ProductSection /> {}
         </main>
 
         <footer className='footer'>
           <section className='footer-primary'>
-              <div>
-                <a href="#inicio"><img className="footer-logo" src="img/logos/logo-white.png" alt="Don Apple" /></a>
-              </div>
-              <div className='footer-redes'>
-                <p className='redes-p'>Siguenos</p>
-                <div className='footer-redes-icon'>
+            <div>
+              <a href="#inicio"><img className="footer-logo" src="img/logos/logo-white.png" alt="Don Apple" /></a>
+            </div>
+            <div className='footer-redes'>
+              <p className='redes-p'>Síguenos</p>
+              <div className='footer-redes-icon'>
                 <a href=""><FontAwesomeIcon icon={faFacebookF} size='2xl'/></a>
                 <a href=""><FontAwesomeIcon icon={faInstagram} size='2xl'/></a>
                 <a href=""><FontAwesomeIcon icon={faEnvelope} size='2xl'/></a>
-                </div>
-                
               </div>
+            </div>
           </section>
           <section className='footer-text'>
-            <p className='footer-text-p'>&copy; 2024 - All rights reserverd.</p>
+            <p className='footer-text-p'>&copy; 2024 - Todos los derechos reservados.</p>
           </section>
         </footer>
       </div>
