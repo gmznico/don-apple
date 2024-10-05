@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollReveal from './ScrollReveal';
+import Navbar from './loyout/Navbar'
 import productsData from './products.json';
 
 const ApplePage = () => {
@@ -42,19 +43,7 @@ const ApplePage = () => {
 
   return (
     <div className="apple-page">
-      <header>
-        <nav className="navbar container">
-          <Link to="/">
-            <img className="logo" src="/img/logos/logo-black.png" alt="Don Apple" />
-          </Link>
-          <div className="navbar-menu">
-            <Link to="/">INICIO</Link>
-            <a href="#products">PRODUCTOS</a>
-            <a href="#about">NOSOTROS</a>
-            <a href="#questions">PREGUNTAS</a>
-          </div>
-        </nav>
-      </header>
+      <Navbar/>
 
       <div className="container">
         <div className="product-page-layout">

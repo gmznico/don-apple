@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header';
+import Header from './loyout/Header';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruck, faPercent, faHeadphones } from '@fortawesome/free-solid-svg-icons';
@@ -13,6 +13,7 @@ import './index.css';
 
 const HomePage = () => (
   <>
+    
     <Header/>
 
     <main className="container">
@@ -56,7 +57,7 @@ const HomePage = () => (
         </section>
       </ScrollReveal>
     </main>
-  </>
+    </>
 );
 
 const App = () => {
