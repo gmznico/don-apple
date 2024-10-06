@@ -1,36 +1,83 @@
-{
-    "products": [
-      {
-        "id": 1,
-        "name": "iPhone 13",
-        "brand": "Apple",
-        "category": "Smartphone",
-        "price": 799,
-        "image": "/img/products/iphone13.jpg"
-      },
-      {
-        "id": 2,
-        "name": "iPhone 12",
-        "brand": "Apple",
-        "category": "Smartphone",
-        "price": 699,
-        "image": "/img/products/iphone12.jpg"
-      },
-      {
-        "id": 3,
-        "name": "Samsung Galaxy S21",
-        "brand": "Samsung",
-        "category": "Smartphone",
-        "price": 799,
-        "image": "/img/products/galaxys21.jpg"
-      },
-      {
-        "id": 6,
-        "name": "iPhone 16",
-        "brand": "Apple",
-        "category": "Smartphone",
-        "price": 599,
-        "image": "public/img/products/iphone16.png"
-      }
-    ]
-  }
+[
+    {
+      "id": 1,
+      "name": "iPhone 14",
+      "description": "El iPhone 14 tiene una pantalla de 6.1 pulgadas y un sistema de cámaras avanzadas.",
+      "price": 999,
+      "image": "img/products/iphone-14.jpg",
+      "filter": "iphone"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 14 Pro",
+      "description": "iPhone 14 Pro, con cámara de 48 MP y pantalla Super Retina XDR.",
+      "price": 1099,
+      "image": "img/products/iphone-14-pro.jpg",
+      "filter": "iphone"
+    },
+    {
+      "id": 3,
+      "name": "MacBook Air M1",
+      "description": "El MacBook Air con chip M1 es rápido y eficiente, perfecto para todo tipo de tareas.",
+      "price": 999,
+      "image": "img/products/macbook-air-m1.jpg",
+      "filter": "macbooks"
+    },
+    {
+      "id": 4,
+      "name": "MacBook Pro M1",
+      "description": "El MacBook Pro M1 ofrece un rendimiento excepcional y una duración de batería impresionante.",
+      "price": 1299,
+      "image": "img/products/macbook-pro-m1.jpg",
+      "filter": "macbooks"
+    },
+    {
+      "id": 5,
+      "name": "AirPods Pro",
+      "description": "AirPods Pro con cancelación activa de ruido y ajuste personalizable.",
+      "price": 249,
+      "image": "img/products/airpods-pro.jpg",
+      "filter": "airpods"
+    },
+    {
+      "id": 6,
+      "name": "Apple Watch Series 7",
+      "description": "El Apple Watch Series 7 tiene un diseño más grande y mejorado para una experiencia más cómoda.",
+      "price": 399,
+      "image": "img/products/apple-watch-series7.jpg",
+      "filter": "smartwatchs"
+    },
+    {
+      "id": 7,
+      "name": "Samsung Galaxy S21",
+      "description": "Samsung Galaxy S21 con pantalla AMOLED y sistema de cámaras avanzado.",
+      "price": 799,
+      "image": "img/products/samsung-galaxy-s21.jpg",
+      "filter": "samsungs"
+    },
+    {
+      "id": 8,
+      "name": "Samsung Galaxy A52",
+      "description": "Samsung Galaxy A52, una opción asequible con buena cámara y rendimiento.",
+      "price": 349,
+      "image": "img/products/samsung-galaxy-a52.jpg",
+      "filter": "samsungs"
+    },
+    {
+      "id": 9,
+      "name": "MacBook Pro 16\"",
+      "description": "MacBook Pro 16\" con chip M1 Max, ideal para profesionales creativos.",
+      "price": 2499,
+      "image": "img/products/macbook-pro-16.jpg",
+      "filter": "macbooks"
+    },
+    {
+      "id": 10,
+      "name": "Dell XPS 13",
+      "description": "Dell XPS 13 es un portátil ligero y potente, ideal para llevar a cualquier parte.",
+      "price": 1099,
+      "image": "img/products/dell-xps-13.jpg",
+      "filter": "netbooks"
+    }
+  ]
+  

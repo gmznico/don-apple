@@ -7,7 +7,7 @@ const Navbar = () =>{
         </a>
         <div className="navbar-menu">
           <a href="/">INICIO</a>
-          <a href="#products">PRODUCTOS</a>
+          <a href="apple">PRODUCTOS</a>
           <a href="#about">NOSOTROS</a>
           <a href="#cuestions">PREGUNTAS</a>
         </div>
