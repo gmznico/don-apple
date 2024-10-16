@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollReveal from './ScrollReveal';
 import './index.css';
-import Sidebar from './Sidebar'; //componente barra lateral
-import productsData from './products.json';
+import Sidebar from './Sidebar'; 
+import productsData from './products.json'; 
 
 const ApplePage = () => {
   const [selectedFilter, setSelectedFilter] = useState(null);
-// Todos estos const son para que el filtrado ande 
+
   const handleFilterChange = (filter) => {
     setSelectedFilter(filter);
   };
@@ -49,16 +49,22 @@ const ApplePage = () => {
         <aside>
           <Sidebar onFilterChange={handleFilterChange} />
         </aside>
+
         <section className="product-list">
           {filteredProducts.map(product => (
             <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} />
-              <h4>{product.name}</h4>
-              <p>{product.description}</p>
-              <p>${product.price}</p>
+              <div className="product-info">
+                <img src={product.image} alt={product.name} className="product-image" />
+                <div className="product-details">
+                  <h4>{product.name}</h4>
+                  <p>{product.description}</p>
+                  <p className="product-price">${product.price}</p>
+                </div>
+              </div>
             </div>
           ))}
         </section>
+
       </div>
     </div>
   );

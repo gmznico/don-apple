@@ -6,8 +6,8 @@ const Sidebar = ({ onFilterChange }) => {
 
   const categories = [
     {
-      // estas son las cateogiras, se puede agregar o modificar algo de ser necesario
       title: 'Apple',
+      filter: 'apple', 
       subcategories: [
         { name: 'iPhone', filter: 'iphone' },
         { name: 'Macbooks', filter: 'macbooks' },
@@ -17,6 +17,7 @@ const Sidebar = ({ onFilterChange }) => {
     },
     {
       title: 'Netbooks',
+      filter: 'netbooks',
       subcategories: [
         { name: 'Macbooks', filter: 'macbooks' },
         { name: 'Netbooks', filter: 'netbooks' }
@@ -24,6 +25,7 @@ const Sidebar = ({ onFilterChange }) => {
     },
     {
       title: 'Celulares',
+      filter: 'celulares',
       subcategories: [
         { name: 'iPhones', filter: 'iphone' },
         { name: 'Samsungs', filter: 'samsungs' }
@@ -36,7 +38,7 @@ const Sidebar = ({ onFilterChange }) => {
   };
 
   const handleFilterClick = (filter) => {
-    onFilterChange(filter);
+    onFilterChange(filter); 
   };
 
   return (
@@ -49,7 +51,9 @@ const Sidebar = ({ onFilterChange }) => {
               className="category-title"
               onClick={() => toggleCategory(index)}
             >
-              {category.title}
+              <Link to="#" onClick={() => handleFilterClick(category.filter)}>
+                {category.title}
+              </Link>
             </span>
             <ul
               className={`subcategories ${

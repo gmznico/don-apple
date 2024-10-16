@@ -4,7 +4,7 @@
       "name": "iPhone 14",
       "description": "El iPhone 14 tiene una pantalla de 6.1 pulgadas y un sistema de cámaras avanzadas.",
       "price": 999,
-      "image": "img/products/iphone-14.jpg",
+      "image": "img/applepage/products/apple/iphone14.jpg",
       "filter": "iphone"
     },
     {
@@ -12,7 +12,7 @@
       "name": "iPhone 14 Pro",
       "description": "iPhone 14 Pro, con cámara de 48 MP y pantalla Super Retina XDR.",
       "price": 1099,
-      "image": "img/products/iphone-14-pro.jpg",
+      "image": "img/applepage/products/apple/iphone14pro.jpg",
       "filter": "iphone"
     },
     {
@@ -20,7 +20,7 @@
       "name": "MacBook Air M1",
       "description": "El MacBook Air con chip M1 es rápido y eficiente, perfecto para todo tipo de tareas.",
       "price": 999,
-      "image": "img/products/macbook-air-m1.jpg",
+      "image": "img/applepage/products/apple/macbookairm1.png",
       "filter": "macbooks"
     },
     {
@@ -28,7 +28,7 @@
       "name": "MacBook Pro M1",
       "description": "El MacBook Pro M1 ofrece un rendimiento excepcional y una duración de batería impresionante.",
       "price": 1299,
-      "image": "img/products/macbook-pro-m1.jpg",
+      "image": "img/applepage/products/apple/macbookprom1.png",
       "filter": "macbooks"
     },
     {
@@ -36,7 +36,7 @@
       "name": "AirPods Pro",
       "description": "AirPods Pro con cancelación activa de ruido y ajuste personalizable.",
       "price": 249,
-      "image": "img/products/airpods-pro.jpg",
+      "image": "img/applepage/products/apple/airpodspro.png",
       "filter": "airpods"
     },
     {
@@ -44,7 +44,7 @@
       "name": "Apple Watch Series 7",
       "description": "El Apple Watch Series 7 tiene un diseño más grande y mejorado para una experiencia más cómoda.",
       "price": 399,
-      "image": "img/products/apple-watch-series7.jpg",
+      "image": "img/applepage/products/apple/applewatchseries7.png",
       "filter": "smartwatchs"
     },
     {
@@ -52,7 +52,7 @@
       "name": "Samsung Galaxy S21",
       "description": "Samsung Galaxy S21 con pantalla AMOLED y sistema de cámaras avanzado.",
       "price": 799,
-      "image": "img/products/samsung-galaxy-s21.jpg",
+      "image": "img/applepage/products/celulares/samsunggalaxys21.png",
       "filter": "samsungs"
     },
     {
@@ -60,7 +60,7 @@
       "name": "Samsung Galaxy A52",
       "description": "Samsung Galaxy A52, una opción asequible con buena cámara y rendimiento.",
       "price": 349,
-      "image": "img/products/samsung-galaxy-a52.jpg",
+      "image": "img/applepage/products/celulares/samsungalaxya52.png",
       "filter": "samsungs"
     },
     {
@@ -68,7 +68,7 @@
       "name": "MacBook Pro 16\"",
       "description": "MacBook Pro 16\" con chip M1 Max, ideal para profesionales creativos.",
       "price": 2499,
-      "image": "img/products/macbook-pro-16.jpg",
+      "image": "img/applepage/products/apple/macbookpro16.png",
       "filter": "macbooks"
     },
     {
