@@ -70,14 +70,6 @@
       "price": 2499,
       "image": "img/applepage/products/apple/macbookpro16.png",
       "filter": "macbooks"
-    },
-    {
-      "id": 10,
-      "name": "Dell XPS 13",
-      "description": "Dell XPS 13 es un portátil ligero y potente, ideal para llevar a cualquier parte.",
-      "price": 1099,
-      "image": "img/products/dell-xps-13.jpg",
-      "filter": "netbooks"
     }
   ]
   

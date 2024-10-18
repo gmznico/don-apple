@@ -370,19 +370,32 @@ a {
   margin-bottom: 10px;
 }
 
+/* estilos para link */
+.category-title a {
+  text-decoration: none;
+  color: inherit; /* Se asegura de que herede el color del padre */
+}
+
+.category-title:hover a {
+  color: #fff; /* Ejemplo de color en hover */
+}
+
+
 /* Estilo título categoría */
+
 .category-title {
   font-weight: bold;
-  color: #333;
+  color: #474242;
   cursor: pointer;
   display: block;
   padding: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .category-title:hover {
-  background-color: #d1c4e9; /* Color de fondo al hacer hover */
+  background-color: #444444; 
+  color: #ffffff; /
 }
 
 /* Estilos para subcategorías */
@@ -401,13 +414,14 @@ a {
   max-height: 0;
 }
 
+/* Subcategorías */
 .subcategories li {
   margin: 5px 0;
 }
 
 .subcategories li a {
   text-decoration: none;
-  color: #007bff;
+  color: #464141; 
   padding: 5px;
   display: inline-block;
   border-radius: 5px;
@@ -415,9 +429,10 @@ a {
 }
 
 .subcategories li a:hover {
-  color: #fff;
-  background-color: #007bff; 
+  color: #ffffff;
+  background-color: #555555; 
 }
+
 
 .content-section {
   display: flex; 
@@ -478,7 +493,7 @@ aside {
 
 .product-details p {
   margin: 4px 0;
-  color: #555;
+  color: #131212;
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
@@ -498,6 +513,142 @@ aside {
   padding: 20px; 
   flex: 1; 
   margin-left: 50px; 
+}
+
+/* Botón "Agregar al carrito" */
+.add-to-cart-btn {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #555555;
+}
+
+/* Ícono flotante del carrito */
+.floating-cart-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.floating-cart-icon:hover {
+  background-color: #cabebe;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Menú del carrito */
+.cart-modal {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  max-height: 400px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+/* Cuando se abre el menú del carrito */
+.cart-modal.show {
+  opacity: 1; /* Visible */
+  transform: translateY(0);
+}
+
+/* Sección de productos en el carrito */
+.cart-modal ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.cart-modal ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  opacity: 0; 
+  transform: translateY(10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+/* Clase para mostrar productos */
+.cart-modal ul li.show {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.cart-modal ul li img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cart-modal ul li span {
+  flex-grow: 1;
+}
+
+/* Boton "Eliminar" */
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #d9534f;
+}
+
+/* Botones en el carrito */
+.cart-modal button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px; 
+}
+
+.cart-modal button:hover {
+  background-color: #0056b3;
 }
 
 
