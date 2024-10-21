@@ -295,7 +295,7 @@ a {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3); 
-  z-index: 1; /
+  z-index: 1;
 }
 
 .heroapple-content {
@@ -395,7 +395,7 @@ a {
 
 .category-title:hover {
   background-color: #444444; 
-  color: #ffffff; /
+  color: #ffffff;
 }
 
 /* Estilos para subcategorías */
@@ -650,6 +650,58 @@ aside {
 .cart-modal button:hover {
   background-color: #0056b3;
 }
+
+/* Sección Nosotros */
+.nosotros-section {
+  background-image: url('/img/products/nosotros/nosotros.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  color: white;
+  position: relative; 
+}
+
+.nosotros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.nosotros-title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-align: center; 
+  font-family: 'Arial', sans-serif; 
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.nosotros-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px; 
+  line-height: 1.6; 
+}
+
+.btn-nosotros {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px; 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  display: inline-block; 
+  font-size: 1.2rem; 
+}
+
+.btn-nosotros:hover {
+  background-color: #555;
+  transform: translateY(-3px); 
+}
+
 
 
 

@@ -18,7 +18,6 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            // esto puse ya que al sacar el const homepage, al abrir otra pagina nueva (/apple) el header seguia y no podia quitarlo, con esto queda estatico en el main
             element={
               <>
                 <Header />
@@ -58,6 +57,21 @@ const App = () => {
                       <RedirectBox label="APPLE" link="/apple" backgroundImage="img/products/apple.jpg" />
                       <RedirectBox label="RELOJES" link="/apple" backgroundImage="img/products/applewatch.jpg" />
                       <RedirectBox label="LAPTOPS" link="/apple" backgroundImage="img/products/laptops.jpg" />
+                    </section>
+                  </ScrollReveal>
+
+                  <ScrollReveal>
+                    <section id="nosotros" className="nosotros-section">
+                      <div className="nosotros-container">
+                        <h2 className="nosotros-title">Sobre Nosotros</h2>
+                        <p className="nosotros-text">
+                          En <strong>Don Apple</strong>, somos un emprendimiento con grandes aspiraciones de crecimiento. Nos apasiona la tecnología y, en particular, todo lo relacionado con el universo Apple. Nuestro objetivo es ofrecer productos de alta calidad junto con soluciones innovadoras que mejoren la experiencia de nuestros clientes.
+                        </p>
+                        <p className="nosotros-text">
+                          Con dedicación y esfuerzo, buscamos crecer día a día, brindando siempre un servicio cercano y personalizado. ¡Gracias por confiar en nosotros y ser parte de esta emocionante aventura!
+                        </p>
+                        <Link to="/contacto" className="btn-nosotros">Contáctanos</Link>
+                      </div>
                     </section>
                   </ScrollReveal>
                 </main>

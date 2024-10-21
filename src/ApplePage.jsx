@@ -52,7 +52,7 @@ const ApplePage = () => {
     const products = cart.map(item => `${item.name} (x${item.quantity})`).join(', ');
     const prices = cart.map(item => `$${item.price * item.quantity}`).join(', ');
     const message = `Quiero consultar sobre: ${products}. Precios: ${prices}.`;
-    const whatsappLink = `https://wa.me/?text=${encodeURIComponent(message)}`; //mensaje con productos a warap
+    const whatsappLink = `https://wa.me/5493454117878?text=${encodeURIComponent(message)}`; //mensaje con productos a warap
     window.open(whatsappLink, '_blank');
   };
 
