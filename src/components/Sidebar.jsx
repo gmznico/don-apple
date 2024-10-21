@@ -1,34 +1,34 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ onFilterChange }) => {
   const [activeCategory, setActiveCategory] = useState(null);
 
   const categories = [
     {
-      title: 'Apple',
-      filter: 'apple', 
+      title: "Apple",
+      filter: "apple",
       subcategories: [
-        { name: 'iPhone', filter: 'iphone' },
-        { name: 'Macbooks', filter: 'macbooks' },
-        { name: 'AirPods', filter: 'airpods' },
-        { name: 'Smartwatchs', filter: 'smartwatchs' }
+        { name: "iPhone", filter: "iphone" },
+        { name: "Macbooks", filter: "macbooks" },
+        { name: "AirPods", filter: "airpods" },
+        { name: "Smartwatchs", filter: "smartwatchs" },
       ],
     },
     {
-      title: 'Netbooks',
-      filter: 'netbooks',
+      title: "Netbooks",
+      filter: "netbooks",
       subcategories: [
-        { name: 'Macbooks', filter: 'macbooks' },
-        { name: 'Netbooks', filter: 'netbooks' }
+        { name: "Macbooks", filter: "macbooks" },
+        { name: "Netbooks", filter: "netbooks" },
       ],
     },
     {
-      title: 'Celulares',
-      filter: 'celulares',
+      title: "Celulares",
+      filter: "celulares",
       subcategories: [
-        { name: 'iPhones', filter: 'iphone' },
-        { name: 'Samsungs', filter: 'samsungs' }
+        { name: "iPhones", filter: "iphone" },
+        { name: "Samsungs", filter: "samsungs" },
       ],
     },
   ];
@@ -38,7 +38,7 @@ const Sidebar = ({ onFilterChange }) => {
   };
 
   const handleFilterClick = (filter) => {
-    onFilterChange(filter); 
+    onFilterChange(filter);
   };
 
   return (
@@ -57,7 +57,7 @@ const Sidebar = ({ onFilterChange }) => {
             </span>
             <ul
               className={`subcategories ${
-                activeCategory === index ? 'open' : 'closed'
+                activeCategory === index ? "open" : "closed"
               }`}
             >
               {category.subcategories.map((sub, subIndex) => (

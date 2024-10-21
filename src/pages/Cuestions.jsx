@@ -1,13 +1,5 @@
-import Header from "../loyout/Header";
-import Footer from "../loyout/Footer";
-
-const Cuestions = () =>{
-    return (
-      <Header/>
-      -
-      <Footer/>
-
-    )
+const Cuestions = () => {
+  return <>preguntas</>;
 };
 
 export default Cuestions;
