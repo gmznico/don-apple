@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./loyout/Header";
-import Footer from "./loyout/Footer";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,7 +16,7 @@ import ScrollReveal from "./components/ScrollReveal";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import "./index.css";
-import Navbar from "./loyout/Navbar";
+import Navbar from "./layout/Navbar";
 import Cuestions from "./pages/Cuestions";
 
 const App = () => {
