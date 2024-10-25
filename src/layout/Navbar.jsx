@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar container">
+    <nav className="navbar container" id="navbar">
       <a href="/">
         <img className="logo" src="img/logos/logo-black.png" alt="Don Apple" />
       </a>

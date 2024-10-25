@@ -17,10 +17,8 @@ const Header = () => {
               <h3>Venta por mayor y menor</h3>
               <div className="hero-p">
                 <p>Equipos Apple | Nuevos y Usados</p>
-                <Link to="/products">
-                  <button className="hero-button button">
-                    <span>Ver más</span>
-                  </button>
+                <Link to="/products" className="hero-button button">
+                  <span>Ver más</span>
                 </Link>
               </div>
             </div>

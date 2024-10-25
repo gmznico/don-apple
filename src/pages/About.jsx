@@ -1,13 +1,13 @@
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
-import '../index.css'; // Importa el archivo de estilos
+import "../index.css"; // Importa el archivo de estilos
 
 const About = () => {
   return (
     <>
       <main id="nosotros" className="nosotros-section">
         <div className="nosotros-overlay">
-          <div className="nosotros-content">
+          <div className="nosotros-content container">
             <h2 className="nosotros-title">Sobre Nosotros</h2>
             <p className="nosotros-text">
               En <strong>Don Apple</strong>, somos un emprendimiento con grandes
@@ -18,8 +18,8 @@ const About = () => {
             </p>
             <p className="nosotros-text">
               Con dedicación y esfuerzo, buscamos crecer día a día, brindando
-              siempre un servicio cercano y personalizado. ¡Gracias por confiar en
-              nosotros y ser parte de esta emocionante aventura!
+              siempre un servicio cercano y personalizado. ¡Gracias por confiar
+              en nosotros y ser parte de esta emocionante aventura!
             </p>
             <button to="/contacto" className="btn-nosotros">
               Contáctanos

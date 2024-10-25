@@ -1,14 +1,17 @@
 import ScrollReveal from "../components/ScrollReveal";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <ScrollReveal>
-        <section className="footer-primary">
+        <section className="footer-primary container">
           <div>
             <Link to="/">
               <img
@@ -19,7 +22,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="footer-redes">
-            <p className="redes-p">Contactos</p>
+            <p className="redes-p">Redes Sociales</p>
             <div className="footer-redes-icon">
               <a
                 href="https://www.instagram.com/donapple__"
@@ -40,7 +43,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faEnvelope} size="2xl" />
+                <FontAwesomeIcon icon={faWhatsapp} size="2xl" />
               </a>
             </div>
           </div>

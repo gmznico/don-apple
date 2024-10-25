@@ -8,11 +8,10 @@ import {
   faPercent,
   faHeadphones,
 } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import RedirectBox from "./components/RedirectBox";
 import ImageHover from "./components/ImageHover";
 import ScrollReveal from "./components/ScrollReveal";
+import ScrollTop from "./components/ScrollTop";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import "./index.css";
@@ -95,6 +94,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/cuestions" element={<Cuestions />} />
       </Routes>
+      <ScrollTop />
       <Footer />
     </div>
   );
