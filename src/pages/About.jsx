@@ -1,6 +1,6 @@
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
-import "../index.css"; // Importa el archivo de estilos
+import "../index.css"; 
 
 const About = () => {
   return (
@@ -21,7 +21,10 @@ const About = () => {
               siempre un servicio cercano y personalizado. ¡Gracias por confiar
               en nosotros y ser parte de esta emocionante aventura!
             </p>
-            <button to="/contacto" className="btn-nosotros">
+            <button 
+              onClick={() => window.open("https://www.instagram.com/donapple__", "_blank")}
+              className="btn-nosotros"
+            >
               Contáctanos
             </button>
           </div>

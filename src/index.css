@@ -639,20 +639,22 @@ aside {
 .cart-modal button:hover {
   background-color: #0056b3;
 }
-
+.content-section{
+  padding: 1rem 0 2rem 0;
+}
 /* Sección Nosotros */
 .nosotros-section {
   position: relative;
   background-image: url("/img/products/nosotros/nosotros.jpg");
-  background-size: cover;
+  background-size:cover;
   background-position: center;
-  height: 100vh;
+  height: 130vh;
 }
 
 .nosotros-overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -673,7 +675,7 @@ aside {
 }
 
 .nosotros-text {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
